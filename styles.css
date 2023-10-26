@@ -1,0 +1,49 @@
+
+div{
+  min-height:200px;
+  min-width:200px;
+}
+.container{
+  background:black;
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+}
+.headerFixed{
+  background:green;
+}
+.sidebarWrapper{
+  background:grey;
+  display:flex;
+}
+.sidebarDiv{
+  background:red;
+}
+.gridWrapper{
+  background:blue;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.topFixed{
+  background:purple;
+  flex:1;
+}
+.gridType{
+  background:orange;
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  padding:1rem;
+}
+.item{
+  background:#E33675;
+  flex-grow:1;
+  height:100px;
+  width:100px;
+}
+@media(max-width:550px){
+  .sidebarDiv{
+    display:none;
+  }
+}
